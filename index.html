@@ -1,12 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>Rock live!</h1>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+        <title>weather</title>
+    </head>
+    <body>
+        <div class="container">
+            <header class="header">
+                <div class="header-city">
+                    <h1 class="header-city__name">Омск</h1>
+                    <span class="header-city__change">Сменить город</span>
+                    <span class="header-city__location">Мое местоположение</span>
+                </div>
+                <div class="header-unit">
+                    <span class="header-unit__degree">°</span>
+                    <div class="header-unit__switch">
+                        <div class="header-unit__switch-item active">
+                            C
+                        </div>
+                        <div class="header-unit__switch-item">
+                            F
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <section class="main">
+                <img src="assets/svg/sun.svg" alt="" class="main__symbol">
+                <h2 class="main__temp">19 <span class="main__unit">°</span></h2>
+                <p class="main__desc">Преимущественно солнечно</p>
+            </section>
+            <footer class="footer">
+                <div class="footer-item">
+                    <h3 class="footer-item__title">
+                        Ветер
+                    </h3>
+                    <p class="footer-item__desc">
+                        5 м/c, западный
+                    </p>
+                </div>
+                <div class="footer-item">
+                    <h3 class="footer-item__title">
+                        Давление
+                    </h3>
+                    <p class="footer-item__desc">
+                        752 мм рт. ст.
+                    </p>
+                </div>
+                <div class="footer-item">
+                    <h3 class="footer-item__title">
+                        Влажность
+                    </h3>
+                    <p class="footer-item__desc">
+                        60%
+                    </p>
+                </div>
+                <div class="footer-item">
+                    <h3 class="footer-item__title">
+                        Вероятность дождя
+                    </h3>
+                    <p class="footer-item__desc">
+                        10%
+                    </p>
+                </div>
+            </footer>
+        </div>
+    </body>
+    <script src="/script.js"></script>
 </html>
